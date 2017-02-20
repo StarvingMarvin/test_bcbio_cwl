@@ -1,6 +1,6 @@
 arguments:
 - position: 0
-  valueFrom: sentinel-runtime=$(runtime)
+  valueFrom: sentinel-runtime='$(runtime)'
 baseCommand:
 - bcbio_nextgen.py
 - runfn
@@ -22,7 +22,7 @@ inputs:
     prefix: sentinel-parallel=
     separate: false
   type: string
-- default: '["files","config__algorithm__quality_format","align_split"]'
+- default: "'[\"files\",\"config__algorithm__quality_format\",\"align_split\"]'"
   id: sentinel-outputs
   inputBinding:
     itemSeparator: ;;

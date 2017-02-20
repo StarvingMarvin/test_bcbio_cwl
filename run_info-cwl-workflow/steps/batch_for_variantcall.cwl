@@ -1,6 +1,6 @@
 arguments:
 - position: 0
-  valueFrom: sentinel-runtime=$(runtime)
+  valueFrom: sentinel-runtime='$(runtime)'
 baseCommand:
 - bcbio_nextgen.py
 - runfn

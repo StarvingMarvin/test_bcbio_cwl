@@ -1,6 +1,6 @@
 arguments:
 - position: 0
-  valueFrom: sentinel-runtime=$(runtime)
+  valueFrom: sentinel-runtime='$(runtime)'
 baseCommand:
 - bcbio_nextgen.py
 - runfn
@@ -21,7 +21,7 @@ inputs:
     prefix: sentinel-parallel=
     separate: false
   type: string
-- default: '["config__algorithm__callable_regions","config__algorithm__non_callable_regions","config__algorithm__callable_count"]'
+- default: '[\"config__algorithm__callable_regions\",\"config__algorithm__non_callable_regions\",\"config__algorithm__callable_count\"]'
   id: sentinel-outputs
   inputBinding:
     itemSeparator: ;;

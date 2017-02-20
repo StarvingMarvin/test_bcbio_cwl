@@ -1,6 +1,6 @@
 arguments:
 - position: 0
-  valueFrom: sentinel-runtime=$(runtime)
+  valueFrom: sentinel-runtime='$(runtime)'
 baseCommand:
 - bcbio_nextgen.py
 - runfn
@@ -22,7 +22,7 @@ inputs:
     prefix: sentinel-parallel=
     separate: false
   type: string
-- default: '["work_bam","align_bam","hla__fastq","work_bam_plus__disc","work_bam_plus__sr"]'
+- default: "'[\"work_bam\",\"align_bam\",\"hla__fastq\",\"work_bam_plus__disc\",\"work_bam_plus__sr\"]'"
   id: sentinel-outputs
   inputBinding:
     itemSeparator: ;;
